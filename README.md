@@ -2,7 +2,7 @@
 
 ## Description 
 
-This is the classic and simple Snake game where the tail grows depending on how many triangles the snake eats.
+This is the classic and simple Snake game where the tail grows depending on how many pieces the snake eats.
 
 ## What do you need to play? 
 

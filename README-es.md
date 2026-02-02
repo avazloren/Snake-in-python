@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Este es el simple y típico juego de la serpiente en el que la longitud de la cola va aumentando en función de cuantos triángulos vaya comiendo.
+Este es el simple y típico juego de la serpiente en el que la longitud de la cola va aumentando en función de cuantas piezas vaya comiendo.
 
 ## ¿Que se necesita para jugarlo?
 
