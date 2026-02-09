@@ -98,7 +98,7 @@ class File():
             return f"An unexpected error occurred, error output: {e}"
 
     def __str__(self): #__str__ function return all the content of self.__file
-        return self.getFileContent()
+        return f"File path: {self.__file}, content: \n {self.getFileContent()}"
 
 if __name__ == "__main__":
     file = File("./config.json")
