@@ -123,7 +123,7 @@ def main(width, height):
                 high_score = score
 
             pen.clear()
-            pen.write(f"Score: {score}  Max: {high_score}", align="center", font=("Arial", 22, "normal"))
+            pen.write(f"Score: {score}  Best: {high_score}", align="center", font=("Arial", 22, "normal"))
 
         # Move body
         for i in range(len(segments)-1, 0, -1):
@@ -147,7 +147,7 @@ def main(width, height):
 
                 score = 0
                 pen.clear()
-                pen.write(f"Puntuación: {score}  Récord: {high_score}", align="center", font=("Arial", 22, "normal"))
+                pen.write(f"Score: {score}  Best: {high_score}", align="center", font=("Arial", 22, "normal"))
 
         time.sleep(0.1)
 
