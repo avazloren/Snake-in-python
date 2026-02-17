@@ -4,16 +4,6 @@
 
 Este es el simple y típico juego de la serpiente en el que la longitud de la cola va aumentando en función de cuantas piezas vaya comiendo.
 
-## ¿Que se necesita para jugarlo?
+## Sobre esta rama
 
-1. El `interprete de Python`
-
-2. Tener instalado `Tkinter`
-
-```
-#Instalación Tkinter para distribuviones basadas en Debian
-sudo apt update
-sudo apt install python3-tk
-```
-
-
+Esta rama es para el desarrolo de un archivo de configuración para el tamaño de la pantalla.

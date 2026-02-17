@@ -1,6 +1,7 @@
 import turtle
 import random
 import time
+from class_file import File
 
 def window(width, height):
     screen = turtle.Screen()
@@ -73,7 +74,10 @@ def move(head):
     if head.direction == "right":
         head.setx(head.xcor() + 20)
 
-def main(width, height):
+def main():
+    configFile = File("./config.json") #the default config file name
+    width = configFile.getWidth() #reads the width of the json
+    height = configFile.getHeight() #reads the height of the json
 
     screen = window(width, height)
     head = snakeHead()
@@ -123,7 +127,7 @@ def main(width, height):
                 high_score = score
 
             pen.clear()
-            pen.write(f"Score: {score}  Max: {high_score}", align="center", font=("Arial", 22, "normal"))
+            pen.write(f"Score: {score}  Best: {high_score}", align="center", font=("Arial", 22, "normal"))
 
         # Move body
         for i in range(len(segments)-1, 0, -1):
@@ -147,8 +151,8 @@ def main(width, height):
 
                 score = 0
                 pen.clear()
-                pen.write(f"Puntuación: {score}  Récord: {high_score}", align="center", font=("Arial", 22, "normal"))
+                pen.write(f"Score: {score}  Best: {high_score}", align="center", font=("Arial", 22, "normal"))
 
         time.sleep(0.1)
 
-main(800,600)
+main()
