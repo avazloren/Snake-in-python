@@ -1,9 +1,18 @@
-# Snake Juego ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+# Snake Juego
 
 ## Descripción
 
 Este es el simple y típico juego de la serpiente en el que la longitud de la cola va aumentando en función de cuantas piezas vaya comiendo.
 
-## Sobre esta rama
+## ¿Que se necesita para jugarlo?
 
-Esta rama es para el desarrolo de un archivo de configuración para el tamaño de la pantalla.
+1. El `interprete de Python`
+
+2. Tener instalado `Tkinter`
+
+```
+#Instalación Tkinter para distribuviones basadas en Debian
+sudo apt update
+sudo apt install python3-tk
+```
+
