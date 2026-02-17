@@ -112,10 +112,3 @@ class File():
     def __str__(self): #__str__ function return all the content of self.__file
         return f"File path: {self.__file}, content: \n {self.getFileContent()}"
 
-if __name__ == "__main__":
-    file = File("./config.json")
-    file.writeContent(["width", 800])
-    print(file.appendContent(["height", 600]))
-    print(file)
-    print(file.getWidth())
-    print(file.getHeight())
