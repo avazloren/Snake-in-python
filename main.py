@@ -1,6 +1,7 @@
 import turtle
 import random
 import time
+from class_file import File
 
 def window(width, height):
     screen = turtle.Screen()
@@ -73,7 +74,10 @@ def move(head):
     if head.direction == "right":
         head.setx(head.xcor() + 20)
 
-def main(width, height):
+def main():
+    configFile = File("./config.json") #the default config file name
+    width = configFile.getWidth() #reads the width of the json
+    height = configFile.getHeight() #reads the height of the json
 
     screen = window(width, height)
     head = snakeHead()
@@ -151,4 +155,4 @@ def main(width, height):
 
         time.sleep(0.1)
 
-main(800,600)
+main()
