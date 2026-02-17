@@ -1,10 +1,22 @@
 import json
 
 class File():
+    '''
+    This class is used to read and write data from a json file too determinate the width and height of the main screen of the program.
+
+    Methods:
+        - setter & getter for changing or getting the file path
+        - __validateInputc used to validate the new entries of the file before they are appended or written
+        - getFileContent used to get the content of the file returned in a string
+        - appendContent used to append the new content into the file content
+        - __str__ used to return the file path and the content
+        - getWidth and getHeight for the width and height of the main screen of the program
+    '''
+
     def __init__(self, file):
         self.__file = file
 
-    @property
+    @property #getter
     def file(self):
         return self.__file
 
@@ -17,7 +29,7 @@ class File():
         else:
             raise TypeError("Incorrect type for input")
 
-    @file.setter
+    @file.setter #setter
     def file(self, file):
         if isinstance(file, str):
             self.__file = file
