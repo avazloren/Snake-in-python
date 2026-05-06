@@ -54,7 +54,7 @@ class File():
         return data["width"]
 
 
-    def writeContent(self, inputc): #this will erase all the content and create neo one
+    def writeContent(self, inputc): #this will erase all the content and create new one
         '''
         saving self.__input in self.__file, json file looks like this:
         {
